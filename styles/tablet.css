@@ -1,0 +1,32 @@
+header .header__nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.header__nav .header__info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 400;
+    color: white;
+} 
+
+
+.header__nav .header__info li span {
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    background-image: url('../assets/icon/arrowdown.svg');
+}
+

@@ -54,7 +54,7 @@ header .header__nav {
     align-self: left;
 }
 
-.header__nav .burger {
+.header__nav .burger .burger-icon {
     display: inline-block;
     width: 23px;
     height: 23px;

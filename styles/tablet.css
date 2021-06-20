@@ -4,29 +4,33 @@ header .header__nav {
     width: 100%;
     height: 70px;
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 1fr 10fr;
 }
 
 .header__nav .header__info {
-    width: 90%;
+    width: 300px;
     margin: 0 auto;
+    margin-left: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style-type: none;
+}
+
+.header__info li a {
+    text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-size: 400;
+    font-size: 500;
     color: white;
-} 
+}
 
-
-.header__nav .header__info li span {
+.header__info li span {
     display: inline-block;
-    width: 5px;
-    height: 10px;
+    width: 10px;
+    height: 5px;
     margin-left: 10px;
     background-size: cover;
     background-position: center;
     background-repeat: none;
     background-image: url('../assets/icon/arrowdown.svg');
 }
-

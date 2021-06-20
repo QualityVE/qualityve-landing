@@ -1,60 +1,97 @@
-//variables
-const nav = document.querySelector('.header__nav');
-let body = document.querySelector('body');
+//Variables
 const burger = document.querySelector('.burger');
-const headerInfo = document.querySelector('.header__info');
+const ulNav = document.querySelector('.header__info');
+let navbar = ['About Us', 'Services', 'References'];
 
-const info = ['About Us', 'Services', 'References'];
 
-//listeners
+//EventListener
 cargarEventListener();
 
-function cargarEventListener()
-{
-    window.addEventListener('resize', medirAnchoBody);
+function cargarEventListener(){
+
+    document.addEventListener('DOMContentLoaded', revisarDimensiones);
+    window.addEventListener('resize', ajustarSitio);
 }
 
-//functions
+//Funciones
 
-function medirAnchoBody() {
+function revisarDimensiones(){
 
-    let anchoBody = body.clientWidth;
-    console.log(anchoBody);
+    let anchoBody = document.body.clientWidth; 
 
-    if(anchoBody < 600)
-    {
-        if(headerInfo)
+    if(anchoBody < 600) {
+
+        if(!burger.childElementCount)
         {
-            while(headerInfo.firstChild)
-            {
-                headerInfo.remove(headerInfo.firstChild);
-            }
+            const span = document.createElement('span');
+            span.classList.add('burger-icon');
+
+            burger.appendChild(span);
         }
+    }
+    
+    if(anchoBody >= 600) {
+        if(!ulNav.childElementCount)
+        {
+            console.log('bien');
+            navbar.forEach(function(item) {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <a href="#">${item} <span></span></a>
+                `;
+
+                ulNav.appendChild(li);
+            });
+        } 
+
+    }
+
+}
+
+function ajustarSitio() {
+
+    let anchoBody = document.body.clientWidth; 
+
+    if(anchoBody < 600) {
 
         if(!burger.firstChild)
         {
             const span = document.createElement('span');
             span.classList.add('burger-icon');
-            burger.appendChild(div);
+
+            burger.appendChild(span);
         }
 
-    }
-
-    if(anchoBody >= 600 && anchoBody < 800)
-    {
-
-        if(!headerInfo.firstChild)
+        if(ulNav.firstChild)
         {
-            info.forEach(function(item){
+            while(ulNav.firstChild)
+            {
+                ulNav.removeChild(ulNav.firstChild);
+            }
+        }
+    }
+    
+    if(anchoBody >= 600) {
+        
+        if(burger.firstChild)
+        {
+            while(burger.firstChild)
+            {
+                burger.removeChild(burger.firstChild);
+            }
+        }
+
+        if(!ulNav.firstChild)
+        {
+            navbar.forEach(function(item) {
                 const li = document.createElement('li');
-                li.innerHTML = 
-                `
-                    <a href="#">${item} <span></span> </a>
+                li.innerHTML = `
+                    <a href="#">${item} <span></span></a>
                 `;
 
-                
+                ulNav.appendChild(li);
             });
-        }
-    }
+        } 
 
+    }
 }

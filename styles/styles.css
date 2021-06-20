@@ -47,11 +47,19 @@ header .header__nav {
     display: flex;
 }
 
+.header__nav ul {
+    display: none;
+}
+
 .header__nav .left-icon img {
     width: 45px;
     height: 45px;
     margin: auto 0;
     align-self: left;
+}
+
+.header__nav .header__navbar {
+    
 }
 
 .header__nav .burger .burger-icon {

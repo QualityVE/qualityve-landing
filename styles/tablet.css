@@ -20,7 +20,8 @@ header .header__nav {
 .header__info li a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-size: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
     color: white;
 }
 
@@ -33,4 +34,52 @@ header .header__nav {
     background-position: center;
     background-repeat: none;
     background-image: url('../assets/icon/arrowdown.svg');
+}
+
+.header__title h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    align-self: left;
+}
+
+.header__title p {
+    width: 90%;
+    min-width: 259px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+header .header__title .header__button {
+    position: absolute;
+    top: 350px;
+    right: 38px;
+    width: 200px;
+    height: 65px;
+    display: block;
+    padding: 20px;
+    background-color: rgb(255 255 255);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 6px 10px rgba(66, 57, 36, 0.16);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: var(--azul-quality);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 8px;
+    height: 13px;
+    margin-left: 10px;
+    background-size: cover;
+    background-image: url('../assets/icon/arrowblue.svg');
 }

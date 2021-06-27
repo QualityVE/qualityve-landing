@@ -1,7 +1,20 @@
 //Variables
 const burger = document.querySelector('.burger');
 const ulNav = document.querySelector('.header__info');
-let navbar = ['About Us', 'Services', 'References'];
+const navbar = [
+    {
+        name : "About Us",
+        id : "about-us"
+    }, 
+    {
+        name: "Services",
+        id : "services"
+    }, 
+    {
+        name : "References",
+        type: "references"
+    }
+];
 
 
 //EventListener
@@ -37,7 +50,7 @@ function revisarDimensiones(){
             navbar.forEach(function(item) {
                 const li = document.createElement('li');
                 li.innerHTML = `
-                    <a href="#">${item} <span></span></a>
+                    <a href="#${item.id}">${item.name} <span></span></a>
                 `;
 
                 ulNav.appendChild(li);
@@ -86,7 +99,7 @@ function ajustarSitio() {
             navbar.forEach(function(item) {
                 const li = document.createElement('li');
                 li.innerHTML = `
-                    <a href="#">${item} <span></span></a>
+                    <a href="#${item.id}">${item.name} <span></span></a>
                 `;
 
                 ulNav.appendChild(li);

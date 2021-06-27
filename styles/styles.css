@@ -14,13 +14,14 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
 }
 
 header {
     position: relative;
     width: 100%;
     min-width: 320px;
-    height: 425px;
+    height: 490px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,10 +59,6 @@ header .header__nav {
     align-self: left;
 }
 
-.header__nav .header__navbar {
-    
-}
-
 .header__nav .burger .burger-icon {
     display: inline-block;
     width: 23px;
@@ -79,7 +76,7 @@ header .header__title {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
-    height: 400px;
+    height: 350px;
     margin: 0 auto;
     margin-top: 95px;
     align-self: center;
@@ -106,9 +103,10 @@ header .header__title {
 
 header .header__title .header__button {
     position: absolute;
-    top: 350px;
-    right: 38px;
-    width: 115px;
+    z-index: 1;
+    top: calc(100% - 25px);
+    right: 40px;
+    width: 150px;
     height: 50px;
     display: block;
     padding: 15px;
@@ -120,7 +118,7 @@ header .header__title .header__button {
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     color: var(--azul-quality);
 }
 
@@ -138,3 +136,49 @@ header .header__title .header__button:hover {
     background-size: cover;
     background-image: url('../assets/icon/arrowblue.svg');
 }
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.main__about-us {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+
+.main__about-us .primary {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 590px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #47C7EB 0%, #008DDD 100%);
+}
+
+.primary__title {
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    align-self: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 4rem;
+}
+
+.main__about-us .primary__clouds {
+    position: absolute;
+    bottom: calc(3%);
+    left: calc(50% - 141px)
+}
+
+
+

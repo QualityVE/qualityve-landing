@@ -87,6 +87,7 @@ header .header__title {
     font-weight: bold;
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
+    text-shadow: 3px 3px 2px #e06b00;
     align-self: left;
 }
 
@@ -112,7 +113,7 @@ header .header__title .header__button {
     padding: 15px;
     background-color: rgb(255 255 255);
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0px 6px 10px rgba(66, 57, 36, 0.16);
     font-size: 1.3rem;
     font-weight: bold;
@@ -148,37 +149,79 @@ main {
     height: auto;
 }
 
-.main__about-us .primary {
+.main__about-us .one {
     position: relative;
     width: 100%;
     min-width: 320px;
     height: 590px;
-    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.main__about-us .primary {
     background: linear-gradient(180deg, #47C7EB 0%, #008DDD 100%);
 }
 
-.primary__title {
+.main__about-us .secundary {
+    background: #F9AE33;
+}
+
+.title {
     width: 90%;
     min-width: 288px;
     margin: 0 auto;
-    align-self: left;
+    align-self: center;
     font-size: 1.4rem;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 3px black;
     font-family: 'Quicksand', sans-serif;
-    line-height: 4rem;
+    line-height: 3.5rem;
+}
+
+.main__about-us .primary__title {
+    text-shadow: 1px 1px 2px #005e94;
 }
 
 .main__about-us .primary__clouds {
     position: absolute;
-    bottom: calc(3%);
-    left: calc(50% - 141px)
+    bottom: calc(15%);
+    right: 25px;
+}
+
+.main__about-us .secundary__title p {
+    width: 205px;
+    text-shadow: 1px 1px 2px #cc8612;
+}
+
+.main__about-us .tertiary {
+    width: 100%;
+    height: 1200px;
+    background: #058FB2;
+}
+
+.tertiary img {
+    position: absolute;
+    top: 540px;
+    left: calc(50% - 132.5px); 
 }
 
 
+ .tertiary__title {
+    margin-top: 200px;
+}
 
+.tertiary__title p {
+    width: 210px;
+    text-shadow: 1px 1px 2px #037592;
+}
+
+.tertiary__description {
+    margin-top: 260px;
+}
+
+.tertiary__description p {
+    width: 210px;
+    text-shadow: 1px 1px 2px #037592;
+}

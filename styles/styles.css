@@ -160,19 +160,24 @@ main {
     flex-direction: column;
 }
 
-.main__about-us .primary {
+.primary {
     background: linear-gradient(180deg, #47C7EB 0%, #008DDD 100%);
 }
 
-.main__about-us .secundary {
+.secundary {
     background: #F9AE33;
+}
+
+.main__about-us .tertiary {
+    height: 1200px;
+    background: #058FB2;
 }
 
 .title {
     width: 90%;
     min-width: 288px;
     margin: 0 auto;
-    align-self: center;
+    display: flex;
     font-size: 1.4rem;
     font-weight: bold;
     color: white;
@@ -180,33 +185,32 @@ main {
     line-height: 3.5rem;
 }
 
-.main__about-us .primary__title {
-    text-shadow: 1px 1px 2px #005e94;
-}
-
-.main__about-us .primary__clouds {
+.primary__clouds {
     position: absolute;
     bottom: calc(15%);
     right: 25px;
 }
 
-.main__about-us .secundary__title p {
+.primary__title p {
+    text-shadow: 1px 1px 2px #005e94;
+}
+
+.secundary__title p {
     width: 205px;
     text-shadow: 1px 1px 2px #cc8612;
 }
 
-.main__about-us .tertiary {
-    width: 100%;
-    height: 1200px;
-    background: #058FB2;
+.tertiary__fly {
+    position: absolute;
+    top: 30px;
+    right: 0;
 }
 
-.tertiary img {
+.tertiary__win {
     position: absolute;
     top: 540px;
     left: calc(50% - 132.5px); 
 }
-
 
  .tertiary__title {
     margin-top: 200px;
@@ -217,11 +221,13 @@ main {
     text-shadow: 1px 1px 2px #037592;
 }
 
-.tertiary__description {
+.main__about-us .tertiary .tertiary__description {
     margin-top: 260px;
+    justify-content: flex-end;
 }
 
-.tertiary__description p {
+.main__about-us .tertiary .tertiary__description p {
     width: 210px;
     text-shadow: 1px 1px 2px #037592;
+    text-align: right;
 }

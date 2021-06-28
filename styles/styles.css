@@ -138,10 +138,14 @@ header .header__title .header__button:hover {
     background-image: url('../assets/icon/arrowblue.svg');
 }
 
+/* Main */
+
 main {
     width: 100%;
     height: auto;
 }
+
+/* About Us */
 
 .main__about-us {
     width: 100%;
@@ -231,3 +235,26 @@ main {
     text-shadow: 1px 1px 2px #037592;
     text-align: right;
 }
+
+/*Services*/
+
+main .services {
+    width: 100%;
+    height: auto;
+}
+
+.services .qwords {
+    position: relative;
+    width: 100%;
+    height: 690px;
+    background-image: linear-gradient(177.32deg, #F9AE33 0.17%, #FE6B00 104.48%);
+}
+
+.qwords__logo {
+    position: absolute;
+    top: 30px;
+    width: 326px;
+    height: 200px;
+}
+
+/* References */

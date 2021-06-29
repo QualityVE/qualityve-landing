@@ -36,61 +36,76 @@
     </header>
 
     <main>
-        <section id="about-us" class="main__about-us">
 
-            <section class="one primary">
-                <div class="title primary__title">
+        <section class="about-us" id="about-us">
+
+            <section class="primary">
+
+                <div class="primary__title">
                     <p>
                         QualityVE nace de una idea de emprendimiento entre amigos, en una época
                         donde el marketing digital se encontraba en pleno crecimiento.
                     </p>
                 </div>
+
                 <picture class="primary__clouds">
                     <!-- <source media="(min-width: 600px)" srcset="./assets/img/bigclouds.svg"> -->
                     <img src="./assets/img/clouds.png" alt="clouds">
                 </picture>
+
             </section>
 
-            <section class="one secundary">
-                <div class="title secundary__title">
+            <section class="secundary">
+
+                <div class="secundary__title">
                     <p>
                         Somos profesionales dedicados en el mundo digital para garantizar servicios
                         que sean de calidad tanto para clientes como para consumidores del medio.
                     </p>
                 </div>
-                <picture class="">
+
+                <picture class="secundary__team">
+                    <img src="#" alt="Team Quality">
                 </picture>
+
             </section>
 
-            <section class="one tertiary">
+            <section class="tertiary">
+
                 <picture class="tertiary__fly">   
                     <img src="./assets/img/fly.png" alt="win">
                 </picture>
-                <div class="title tertiary__title">
-                    <p>
+
+                <div class="three tertiary__title">
+                    <p class="text">
                         Usamos plataformas digitales que facilitan la optimización del trabajo
                         y tenemos un equipo de personas comprometidas a realizar un trabajo de
                         calidad.
                     </p>
                 </div>
-                <picture class="tertiary__win">
+
+                <picture class= "tertiary__win">
                     <img src="./assets/img/win.png" alt="win">
                 </picture>
-                <div class="title tertiary__description">
-                    <p>
+
+                <div class="three tertiary__description">
+                    <p class="text">
                         Buscamos cubrir las necesidades del mercado, garantizando que los
                         servicios ofrecidos sean de calidad y alcancen los objetivos requeridos por
                         nuestros clientes y consumidores del medio.
                     </p>
                 </div>
+
             </section>
 
         </section>
 
         <section id="services" class="services">
-
+        <!--QWords-->
             <section class="qwords">
-                <img src="./assets/img/qwords.png" alt="qwords" class="qwords__logo">
+
+                <img src="./assets/img/qwords.png" alt="qwords" class="q__logo">
+
                 <div class="qword__title">
                     <h2>
                         Servicios de redacción/edición de
@@ -99,7 +114,7 @@
                     <p>
                         Realizamos los pedidos cuidando las especificaciones del
                         cliente.
-                        
+                        <br><br>
                         Nos especializamos en
                         marketing digital, en el área de redacción y edición de textos
                         con estructura SEO buscando
@@ -107,36 +122,207 @@
                         contenido.                        
                     </p>
                 </div>
-                <section>
-                    <article>
-                        <div>
-                            <h3></h3>
-                            <img src="" alt="">
-                            <p></p>
-                            <p></p>
-                            <button></button>
-                        </div>
-                    </article>
-                </section>
-            </section>
 
-            <section class="qcode"></section>
-            <section class="qdesign"></section>
+                <section class="qword__plans">
+                    <div class="qword__subtitle">
+                        <h2>Escoge el paquete que mejor se adapte a tí</h2>
+                        <p>Últimas ofertas</p>
+                    </div>
+                    <section class="qword__slider">
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">1 Artículo</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">7<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">4 Artículos</h3>
+                                <p class="plan-card-text">500 palabras</p>
+                                <p class="plan-card-price">15<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">5 Artículos</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">35<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">10 Artículos</h3>
+                                <p class="plan-card-text">600 palabras</p>
+                                <p class="plan-card-price">40<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">Carga de contenido</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">1<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">Traducción</h3>
+                                <p class="plan-card-text">1000 palabras | Inglés-Español</p>
+                                <p class="plan-card-price">4<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+            </section>
+            <!--QWords-->
+           
+            <!--QCode-->
+            <section class="qcode">
+
+                <img src="./assets/img/qcode.png" alt="qcode" class="q__logo">
+
+                <div class="qword__title">
+                    <h2>
+                        Servicios de programación
+                    </h2>
+                    <p>
+                        Somos especialistas en gestionar procesos a través de
+                        plataformas web impulsando a nuestros clientes a la
+                        transformación digital, ofreciendo soluciones que garanticen el
+                        éxito de sus proyectos.
+                        <br><br>
+                        Desarrollamos códigos a medida utilizando altos estándares de
+                        programación.Aplicamos nuestros conocimientos para crear
+                        propuestas que ayuden en el crecimiento de tu negocio o
+                        empresa.                    
+                    </p>
+                </div>
+
+                <section class="qword__plans">
+                    <div class="qword__subtitle">
+                        <h2>Escoge el paquete que mejor se adapte a tí</h2>
+                        <p>Últimas ofertas</p>
+                    </div>
+                    <section class="qword__slider">
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">1 Artículo</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">7<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">4 Artículos</h3>
+                                <p class="plan-card-text">500 palabras</p>
+                                <p class="plan-card-price">15<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">5 Artículos</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">35<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+            </section>
+            <!--QCode-->
+
+            <!--QDesign-->
+            <section class="qdesign">
+
+                <img src="./assets/img/qwords.png" alt="qdesign" class="q__logo">
+
+                <div class="qword__title">
+                    <h2>
+                        Servicios de redacción/edición de
+                        contenido SEO
+                    </h2>
+                    <p>
+                        Realizamos los pedidos cuidando las especificaciones del
+                        cliente.
+                        <br><br>
+                        Nos especializamos en
+                        marketing digital, en el área de redacción y edición de textos
+                        con estructura SEO buscando
+                        generar una marca positiva con la creación de
+                        contenido.                        
+                    </p>
+                </div>
+
+                <section class="qword__plans">
+                    <div class="qword__subtitle">
+                        <h2>Escoge el paquete que mejor se adapte a tí</h2>
+                        <p>Últimas ofertas</p>
+                    </div>
+                    <section class="qword__slider">
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">1 Artículo</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">7<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">4 Artículos</h3>
+                                <p class="plan-card-text">500 palabras</p>
+                                <p class="plan-card-price">15<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+
+                        <article class="qword__card">
+                            <div class="plan-info-container">
+                                <h3 class="plan-card-title">5 Artículos</h3>
+                                <p class="plan-card-text">1000 palabras</p>
+                                <p class="plan-card-price">35<span>$</span></p>
+                                <button class="plan-card-ca">Escoger este <span></span></button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+            </section>
+            <!--QDesign-->
         </section>
 
         <section id="references"></section>
     </main>
 
-    <footer class="footer">
-        <section id="contact" class="footer__contact">
-            <div>
-                <ul>
-                    <li><span></span>Web: http://www.qualityve.com/</li>
-                    <li><span></span>Gmail: trabajos.qualityve@gmail.com</li>
-                    <li><span></span>Telegram: @qualityve</li>
-                </ul>
-            </div>
-        </section>
+    <footer class="footer" id="contact">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.svg" alt="">
+        </div>
+        <div  class="footer__contact">
+            <ul>
+                <li><span></span>Web: http://www.qualityve.com/</li>
+                <li><span></span>Gmail: trabajos.qualityve@gmail.com</li>
+                <li><span></span>Telegram: @qualityve</li>
+            </ul>
+        </div>
     </footer>
     <script src="./js/app.js"></script>
 </body>

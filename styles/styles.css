@@ -192,7 +192,7 @@ main .about-us {
     position: relative;
     width: 100%;
     height: 590px;
-    padding-top: 130px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     background: #F9AE33;
@@ -218,8 +218,11 @@ main .about-us {
     text-shadow: 1px 1px 3px #734903;
 }
 
-.secundary__team {
-    position: relative;
+.secundary__team img {
+    position: absolute;
+    z-index: 1;
+    width: 260px;
+    height: 310px;
     right: 0;
     bottom: calc(-10%);
 }
@@ -286,96 +289,106 @@ main .services {
     height: auto;
 }
 
-.services .qwords {
+.services .qservice {
     position: relative;
     width: 100%;
-    height: 1100px;
+    height: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(177.32deg, #F9AE33 0.17%, #FE6B00 104.48%);
+}
+
+.services .qwords {
+    background: linear-gradient(177.32deg, var(--naranja-quality) 0.17%, #FE6B00 104.48%);
 }
 
 .services .q__logo {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 229px;
+    height: 228px;
     top: 50px;
-    left: calc(50% - 75px);
+    left: calc(50% - 114.5px);
 }
 
-.qword__title {
+.q__title {
     width: 90%;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 250px;
     font-family: 'Inter', sans-serif;
-    color: #2f1801;
+    color: white;
 }
 
-.qword__title h2 {
+.q__title h2 {
     font-size: 2.4rem;
     line-height: 3.5rem;
 }
 
-.qword__title p {
+.q__title p {
     margin-top: 30px;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 2.5rem;
 
 }
 
-.qword__plans {
+.q__plans {
     width: 100%;
     min-width: 320px;
+    height: auto;
     padding-bottom: 50px;
     text-align: center;
 }
 
-.qword__subtitle {
+.q__subtitle {
     width: 90%;
     min-width: 288px;
-    height: auto;
+    height: 200px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    color: white;
 }
 
-.qword__subtitle h2 {
+.q__subtitle h2 {
     padding-top: 50px;
     font-size: 2rem;
     font-weight: bold;
-    line-height: 3rem;
+    line-height: 3.5rem;
 }
 
-.qword__subtitle p {
+.q__subtitle p {
     padding-top: 30px;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #625710;
+    color: white;
 }
 
-.qword__slider {
+.q__subtitle .qwords-p {
+    text-shadow: 2px 2px 5px #c16007;
+}
+
+.q__slider {
     display: flex;
     gap: 5px;
     height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-
 }
 
-.qword__card {
+.q__card {
     scroll-snap-align: center;
     width: 60%;
     min-width: 192px;
     max-width: 300px;
     height: 260px;
     margin: 20px 5px 0;
-    padding: 0 15px;
+    padding: 0 10px;
     background-color: white;
     border-radius: 20px;
+}
+
+.qwords__card {
     box-shadow: 0 4px 8px #733803;
 }
 
@@ -415,12 +428,16 @@ main .services {
     width: 150px;
     height: 48px;
     margin-top: 5px;
+    margin-bottom: 30px;
     background-color: white;
-    border: 2px solid #fd7608;
     border-radius: 10px;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.8rem;
+}
+
+.qwords__slider .plan-card-ca {
+    border: 2px solid #fd7608;
 }
 
 .plan-card-ca span {
@@ -432,6 +449,73 @@ main .services {
     background-position: center;
     background-image: url('../assets/icon/rightarrow.svg');
     vertical-align: center;
+}
+
+.services .qcode {
+    background: linear-gradient(177.32deg, #00A79D 0.17%, var(--verde-quality) 104.48%);
+}
+
+.q__title .computer img {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 525px;
+    right: -30px;
+}
+.q__title .title-secundary-p {
+    margin-top: 260px;
+}
+
+.q__subtitle .qcode-p {
+    text-shadow: 2px 2px 5px #0a5039;
+}
+
+.qcode__slider {
+    height: 500px;
+}
+
+.qcode__card {
+    height: 425px;
+    box-shadow: 0 4px 8px #0f7948;
+}
+
+.qcode__card .plan-card-price {
+    font-size: 4rem;
+}
+
+.q__card .span-card {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.qcode__card .plan-card-landing {
+    background-image: url('../assets/img/our.png');
+}
+
+.qcode__card .plan-card-commerce {
+    background-image: url('../assets/img/cart.png');
+}
+
+.qcode__card .plan-card-blog {
+    background-image: url('../assets/img/blog.png');
+}
+
+.qcode__card .plan-card-info-page {
+    background-image: url('../assets/img/man.png');
+}
+
+.qcode__slider .plan-card-ca {
+    border: 2px solid #368c67;
+}
+
+.services .qdesign {
+    background: linear-gradient(177.32deg, #058FB2 0.17%, #004658 104.48%);
 }
 
 .footer {
@@ -475,26 +559,4 @@ main .services {
 
 .footer__contact ul li {
     margin-top: 20px;
-}
-
-.services .qcode {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(177.32deg, #03CDDA 0.17%, #527E4B 104.48%);
-}
-
-.services .qdesign {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(177.32deg, #058FB2 0.17%, #004658 104.48%);
 }

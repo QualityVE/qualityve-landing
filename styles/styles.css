@@ -38,7 +38,7 @@ header .header__nav {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -182,17 +182,20 @@ main .about-us {
 
 .primary__clouds {
     position: absolute;
-    width: 156px;
-    height: 100px;
     top: calc(70% - 135.5px);
-    left: calc(50% - 141px);
+    left: calc(50% - 100px);
+}
+
+.primary__clouds img {
+    width: 200px;
+    height: 200px;
 }
 
 .about-us .secundary {
     position: relative;
     width: 100%;
     height: 590px;
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     background: #F9AE33;
@@ -208,7 +211,7 @@ main .about-us {
 }
 
 .secundary__title p {
-    width: 250px;
+    width: 400px;
     font-size: 1.4rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -276,7 +279,7 @@ main .about-us {
 .tertiary__fly {
     position: absolute;
     top: calc(8%);
-    left: calc(60% - 123.5px);
+    right: 0;
 }
 
 .tertiary__stela {
@@ -288,6 +291,7 @@ main .about-us {
 .tertiary__stela img {
     width: 200px;
 }
+
 .tertiary__win {
     position: absolute;
     top: calc(50%);
@@ -548,8 +552,7 @@ main .services {
     height: 500px;
     padding: 30px;
     background: #232f3e;
-    border-top: 1px solid rgb(126 126 126);
-    border-bottom: 1px solid rgb(126 126 126);
+    border: 1px solid #121921;
     font-size: 1.2rem;
     font-family: 'Quicksand', sans-serif;
     line-height: 2.4rem;

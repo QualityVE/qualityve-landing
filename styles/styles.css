@@ -279,6 +279,15 @@ main .about-us {
     left: calc(60% - 123.5px);
 }
 
+.tertiary__stela {
+    position: absolute;
+    top: calc(72%);
+    left: 0;
+}
+
+.tertiary__stela img {
+    width: 200px;
+}
 .tertiary__win {
     position: absolute;
     top: calc(50%);

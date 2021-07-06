@@ -12,7 +12,7 @@ const navbar = [
     }, 
     {
         name : "References",
-        type: "references"
+        id: "contact"
     }
 ];
 

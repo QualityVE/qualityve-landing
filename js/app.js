@@ -1,6 +1,7 @@
 //Variables
 const burger = document.querySelector('.burger');
 const ulNav = document.querySelector('.header__info');
+const secciones = document.querySelector('.lista-de-secciones table tbody');
 const navbar = [
     {
         name : "About Us",
@@ -16,6 +17,17 @@ const navbar = [
     }
 ];
 
+const burgerNav = [
+    {
+        type: "About Us",
+        seccions: ['Historia', 'Misión/Visión/Valores', ]
+    },
+    {
+        type: "Services",
+        seccions: ['QWords', 'QCode', 'QDesign']
+    }
+];
+
 
 //EventListener
 cargarEventListener();
@@ -24,6 +36,7 @@ function cargarEventListener(){
 
     document.addEventListener('DOMContentLoaded', revisarDimensiones);
     window.addEventListener('resize', ajustarSitio);
+    // burger.addEventListener('click', verLista);
 }
 
 //Funciones
@@ -108,3 +121,13 @@ function ajustarSitio() {
 
     }
 }
+
+// function verLista(e)
+// {
+//     e.preventDefault();
+
+//     if(e.target.classList.contains('burger-icon'))
+//     {
+
+//     }
+// }

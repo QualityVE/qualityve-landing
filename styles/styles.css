@@ -60,6 +60,7 @@ header .header__nav {
 }
 
 .header__nav .burger .burger-icon {
+    z-index: 1;
     display: inline-block;
     width: 23px;
     height: 23px;
@@ -71,6 +72,172 @@ header .header__nav {
     background-position: center;
     background-image: url('../assets/icon/burger.svg');
 }
+
+/*Este menú va junto a JS*/
+
+.header__nav .lista-de-secciones {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+    height: 570px;
+    top: 0;
+    right: 0;
+    background-color: #232f3e;
+}
+
+.lista-de-secciones__sub-nav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.sub-nav__line-menu {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: calc(50% - 140px);
+    width: 280px;
+    height: 4px;
+    border-radius: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assets/icon/line.svg');
+}
+
+.sub-nav__left-nav {
+    display: flex;
+    align-self: left;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sub-nav__left-nav span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/img/qblack.svg');
+}
+
+.sub-nav__left-nav p {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.sub-nav__right-nav {
+    display: flex;
+    align-self: right;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sub-nav__right-nav span {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/icon/equis.svg');
+}
+
+.lista-de-secciones__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.menu__title-menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color:white;
+}
+
+.menu__list-menu {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.list-menu__header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    padding: 20px;
+    background: rgba(94, 109, 132, 0.54);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    font-size: 1.4rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;    
+    color: white;
+}
+
+.list-menu__header-menu td a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.list-menu__header-menu .list-menu__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.list-menu__title .material-icons-outlined-face, .material-icons-outlined-up, .material-icons-outlined-check {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: text-bottom;
+}
+
+.list-menu__title .material-icons-outlined-face {
+    background-image: url('../assets/icon/face.svg');
+}
+
+.list-menu__title .material-icons-outlined-up {
+    background-image: url('../assets/icon/services.svg');
+}
+
+.list-menu__title .material-icons-outlined-check {
+    background-image: url('../assets/icon/references.svg');
+}
+
+
+.list-menu__header-menu td {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+/*Este menú va junto a JS*/
 
 header .header__title {
     width: 90%;
@@ -348,7 +515,7 @@ main .services {
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-align: center;
 }
 

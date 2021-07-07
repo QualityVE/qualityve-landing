@@ -258,13 +258,11 @@ header .header__title .header__button {
     margin-top: 330px;
 }
 
-.qcode__slider {
-    height: 450px;
+.qcode__slider, .qdesign__slider {
+    height: auto;
+    padding-bottom: 30px;
 }
 
-.qdesign__slider {
-    height: 950px;
-}
 
 .footer {
     display: grid;

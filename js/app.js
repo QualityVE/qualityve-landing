@@ -1,7 +1,9 @@
 //Variables
+const menuMobile = document.querySelector('.lista-de-secciones');
 const burger = document.querySelector('.burger');
+const equis = document.querySelector('.sub-nav__equis');
+const headerNav = document.querySelector('.header__nav');
 const ulNav = document.querySelector('.header__info');
-const secciones = document.querySelector('.lista-de-secciones table tbody');
 const navbar = [
     {
         name : "About Us",
@@ -17,17 +19,6 @@ const navbar = [
     }
 ];
 
-const burgerNav = [
-    {
-        type: "About Us",
-        seccions: ['Historia', 'Misión/Visión/Valores', ]
-    },
-    {
-        type: "Services",
-        seccions: ['QWords', 'QCode', 'QDesign']
-    }
-];
-
 
 //EventListener
 cargarEventListener();
@@ -36,7 +27,8 @@ function cargarEventListener(){
 
     document.addEventListener('DOMContentLoaded', revisarDimensiones);
     window.addEventListener('resize', ajustarSitio);
-    // burger.addEventListener('click', verLista);
+    burger.addEventListener('click', abrirLista);
+    equis.addEventListener('click', cerrarLista);
 }
 
 //Funciones
@@ -112,7 +104,7 @@ function ajustarSitio() {
             navbar.forEach(function(item) {
                 const li = document.createElement('li');
                 li.innerHTML = `
-                    <a href="#${item.id}">${item.name} <span></span></a>
+                    <a href="#${item.id}">${item.name}<span></span></a>
                 `;
 
                 ulNav.appendChild(li);
@@ -122,12 +114,21 @@ function ajustarSitio() {
     }
 }
 
-// function verLista(e)
-// {
-//     e.preventDefault();
+function abrirLista(e)
+{
+    e.preventDefault();
 
-//     if(e.target.classList.contains('burger-icon'))
-//     {
+    if(e.target.classList.contains('burger-icon'))
+    {
+        menuMobile.style.display = 'flex';
+    }
+}
 
-//     }
-// }
+function cerrarLista(e)
+{
+    e.preventDefault();
+
+    if(e.target.classList.contains('sub-nav__equis')){
+        menuMobile.style.display = 'none';
+    }
+}

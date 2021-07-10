@@ -44,7 +44,7 @@ header .header__nav {
 }
 
 .header__nav .nav-icon {
-    margin: 10px;
+    margin-left: 2.5px;
     display: flex;
 }
 
@@ -53,8 +53,8 @@ header .header__nav {
 }
 
 .header__nav .left-icon img {
-    width: 45px;
-    height: 45px;
+    width: 75px;
+    height: 75px;
     margin: auto 0;
     align-self: left;
 }
@@ -77,14 +77,16 @@ header .header__nav {
 
 .header__nav .lista-de-secciones {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     z-index: 2;
     width: 100%;
-    height: 570px;
+    height: 700px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     top: 0;
     right: 0;
-    background-color: #232f3e;
+    background: linear-gradient(180.34deg, #007A99 0.3%, #003644 99.72%, #005165 99.72%);
 }
 
 .lista-de-secciones__sub-nav {
@@ -125,7 +127,7 @@ header .header__nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url('../assets/img/qblack.svg');
+    background-image: url('../assets/img/qblue.svg');
 }
 
 .sub-nav__left-nav p {
@@ -188,7 +190,7 @@ header .header__nav {
     height: auto;
     margin-top: 12px;
     padding: 20px;
-    background: rgba(94, 109, 132, 0.54);
+    background: rgba(5, 143, 178, 0.54);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
     font-size: 1.4rem;
@@ -718,8 +720,8 @@ main .services {
     width: 100%;
     height: 500px;
     padding: 30px;
-    background: #232f3e;
-    border: 1px solid #121921;
+    background: #012e3a;
+    border-top: 3px solid #002d3a;
     font-size: 1.2rem;
     font-family: 'Quicksand', sans-serif;
     line-height: 2.4rem;

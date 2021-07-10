@@ -4,13 +4,16 @@ const burger = document.querySelector('.burger');
 const equis = document.querySelector('.sub-nav__equis');
 const headerNav = document.querySelector('.header__nav');
 const ulNav = document.querySelector('.header__info');
+const tBody = document.querySelector('.menu__list-menu');
 const navbar = [
     {
         name : "About Us",
+        section : ['historia', 'marca', 'equipo'],
         id : "about-us"
     }, 
     {
         name: "Services",
+        section : ['qwords', 'qcode', 'qdesign'],
         id : "services"
     }, 
     {
@@ -29,6 +32,7 @@ function cargarEventListener(){
     window.addEventListener('resize', ajustarSitio);
     burger.addEventListener('click', abrirLista);
     equis.addEventListener('click', cerrarLista);
+    tBody.addEventListener('click', cerrarLista);
 }
 
 //Funciones
@@ -130,5 +134,10 @@ function cerrarLista(e)
 
     if(e.target.classList.contains('sub-nav__equis')){
         menuMobile.style.display = 'none';
+    }
+
+    if(e.target.parentElement.parentElement.classList.contains('list-menu__header-menu')){
+        menuMobile.style.display = 'none';
+        window.location.href = e.target.getAttribute('href');
     }
 }

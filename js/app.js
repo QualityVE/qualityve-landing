@@ -33,7 +33,7 @@ function cargarEventListener(){
     burger.addEventListener('click', abrirLista);
     equis.addEventListener('click', cerrarLista);
     tBody.addEventListener('click', cerrarLista);
-    swipeFrontElement.addEventListener('touchcancel', cerrarLista);
+    window.addEventListener('touchcancel', cerrarLista);
 }
 
 //Funciones

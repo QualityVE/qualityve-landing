@@ -199,6 +199,11 @@ header .header__nav {
     color: white;
 }
 
+.list-menu__header-menu td {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
 .list-menu__header-menu td a {
     text-decoration: none;
     list-style-type: none;
@@ -231,12 +236,6 @@ header .header__nav {
 
 .list-menu__title .material-icons-outlined-check {
     background-image: url('../assets/icon/references.svg');
-}
-
-
-.list-menu__header-menu td {
-    margin-top: 5px;
-    font-size: 1.2rem;
 }
 
 /*Este menú va junto a JS*/
@@ -560,10 +559,14 @@ main .services {
 
 .q__card {
     scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 60%;
     min-width: 192px;
     max-width: 300px;
-    height: 260px;
+    height: 220px;
     margin: 20px 5px 0;
     padding: 0 10px;
     background-color: white;
@@ -637,15 +640,29 @@ main .services {
     background: linear-gradient(177.32deg, #00A79D 0.17%, var(--verde-quality) 104.48%);
 }
 
+.q__title h2 {
+    display: flex;
+    width: auto;
+    height: 80px;
+    align-items: center;
+
+}
+
 .q__title .computer img {
     position: absolute;
     width: 350px;
     height: 250px;
     top: 525px;
     right: 0px;
+    opacity: 0.9;
+}
+
+.q__title .title-primary-p {
+    max-width: 320px;
 }
 
 .q__title .title-secundary-p {
+    max-width: 320px;
     margin-top: 260px;
 }
 

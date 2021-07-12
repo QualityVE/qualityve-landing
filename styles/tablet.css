@@ -246,12 +246,18 @@ header .header__title .header__button {
     border-radius: 20px;
 }
 
+.q__title .title-primary-p {
+    max-width: 600px;
+}
+
+.q__title .title-secundary-p {
+    margin-top: 600px;
+}
+
 .q__title .computer img {
     position: absolute;
     width: 450px;
     height: 335px;
-    top: 420px;
-    right: 0px;
 }
 
 .q__title .title-secundary-p {
